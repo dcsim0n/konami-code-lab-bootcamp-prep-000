@@ -11,8 +11,9 @@ const codes = [
   "a"
 ];
 var counter = 0;
-
- function(){
+function init() {
+  const body = document.querySelector('body');
+  body.addEventListener('keydown', function(e){
   const key = this.key;
   //console.log(key);
   if (key === codes[counter]){
@@ -24,9 +25,6 @@ var counter = 0;
   } else {
     counter = 0;
   }
-}
-function init() {
-  const body = document.querySelector('body');
-  body.addEventListener('keydown', checkit);
+});
   
 }
