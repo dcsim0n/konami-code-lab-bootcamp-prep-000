@@ -12,7 +12,7 @@ const codes = [
 ];
 var counter = 0;
 
-var checkit = function(){
+ function(){
   const key = this.key;
   //console.log(key);
   if (key === codes[counter]){
